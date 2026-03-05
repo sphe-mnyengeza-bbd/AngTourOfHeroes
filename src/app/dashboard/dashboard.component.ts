@@ -27,7 +27,7 @@ ngOnInit(): void {
 getHeroes(): void {
  this.heroService.getHeroes()
  .subscribe(heroes => {
-  this.heroes = heroes.slice(1, 5)
+  this.heroes = heroes.slice(0, 4)
 });
 }
 }
