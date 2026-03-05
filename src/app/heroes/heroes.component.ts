@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
-import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
+import { NgFor} from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 import { RouterLink } from '@angular/router';
 
@@ -14,9 +13,6 @@ import { RouterLink } from '@angular/router';
   imports: [
     NgFor,
     FormsModule,
-    NgIf,
-    UpperCasePipe,
-    HeroDetailComponent,
     RouterLink
 ],
 })
